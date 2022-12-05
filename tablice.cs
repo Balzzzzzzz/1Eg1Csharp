@@ -147,11 +147,11 @@ for (int i = 0; i < T.Length; i++)
 for (int i = 0; i < T.Length; i++)
 {
     Console.Write(T[i] + " ");
-    if (i % 2 == 0)
+    if (T[i] % 2 == 0)
     {
         parzyste += 1;
     }
-    else if (i % 2 != 0)
+    else if (T[i] % 2 != 0)
     {
         nieparzyste += 1;
     }
