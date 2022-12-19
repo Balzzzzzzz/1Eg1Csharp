@@ -1,132 +1,130 @@
-1. (easy) Sprawdź czy suma dwóch wpisanych przez użytkownika 
+// zad 1
 
-jest liczbą parzystą.
-	Wejście: a, b
-	Wyjście: TAK / NIE
-
-using System;
-
-
-class Program {
-
-	public static void Main (string[] args) {
-
-
- Console.WriteLine("Wpisz 1 liczbę");
-
-
-   int a = int.Parse(Console.ReadLine());
-
-
- Console.WriteLine("Wpisz 2 liczbę");
-
-
-   int b = int.Parse(Console.ReadLine());
-
-
-	if ((a+b) % 2 == 0)
-
+Console.WriteLine("Podaj 2 liczby całkowite: ");
+int a = int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
+if ((a + b) % 2 == 0)
 {
-
-Console.WriteLine("Jest parzystą");
-
- }
-
-
- else
-
- {
-
-  Console.WriteLine("Nie jest parzystą");
-
-   }
-
-
-  }
- }
-
-
-
-2. (easy) Sprawdź, czy średnia arytmetyczna dwóch wpisanych 
-
-liczb jest wieksza od jej średniej geometrycz-nej.
-	Wejście: a,g
-	Wyjście: TAK / NIE
-
-using System;
-
-class Program {
-  public static void Main (string[] args) {
-    Console.WriteLine("Wpisz 1 liczbę");
-      int a = int.Parse(Console.ReadLine());
-    Console.WriteLine("Wpisz 2 liczbę");
-         int b = int.Parse(Console.ReadLine());
-      if ((a+b) / 2 > (a*b) * 0.5)
-      {
-          Console.WriteLine("TAK");
-      }
-
-      else
-      {
-        Console.WriteLine("NIE");
-      }
-
-  }
+    Console.WriteLine("suma jest liczbą parzystą");
+}
+else
+{
+    Console.WriteLine("suma nie jest liczbą parzystą");
 }
 
+// zad 2
 
-3. (easy) Użytkownik podaje 3 liczby całkowite. Sprawdź czy 
-
-dokładnie dwie z nich są sobie równe.
-	Wejście: k,l,m
-	Wyjście: TAK / NIE (wraz z podaniem tych dwóch równych 
-
-o ile są takowe)
-
-using System;
-
-class Program {
-  public static void Main (string[] args) {
-    Console.WriteLine("Wpisz 1 liczbę");
-      int a = int.Parse(Console.ReadLine());
-
-    Console.WriteLine("Wpisz 2 liczbę");
-         int b = int.Parse(Console.ReadLine());
-
-    Console.WriteLine("Wpisz 3 liczbę");
-         int c = int.Parse(Console.ReadLine());
-
-      if (a==b && a==c && b==c && a==b==c )
-      {
-          Console.WriteLine("TAK");
-      }
-
-      else
-      {
-        Console.WriteLine("NIE");
-      }
-
-  }
+Console.WriteLine("Podaj 2 liczby całkowite: ");
+int a = int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
+if (((a + b) / 2) > (Math.Pow(a * b, 0.5)))
+{
+    Console.WriteLine("średnia arytmetyczna jest większa od jej średniej geomentrycznej");
+}
+else
+{
+    Console.WriteLine("średnia arytmetyczna nie jest większa od jej średniej geonetrycznej");
 }
 
-4. (medium) Niech użytkownik wprowadzi 4 różne liczby 
+// zad 3
 
-całkowite. Napisz program, który sprawdzi, któraz tych liczb 
+Console.WriteLine("Podaj 3 liczbę całkowite:");
+int k = int.Parse(Console.ReadLine());
+int l = int.Parse(Console.ReadLine());
+int m = int.Parse(Console.ReadLine());
+if ((k == m) && (k == l) && (l == m))
+{
+    Console.WriteLine("Wszystkie liczby są równe");
+}
+if ((k == l) && !(k == m) && !(l == m))
+{
+    Console.Write("k = l = ");
+    Console.WriteLine(k);
+}
+if ((k == m) && !(k == l) && !(l == m))
+{
+    Console.Write("k = m = ");
+    Console.WriteLine(m);
+}
+if ((l == m) && !(k == m) && !(l == k))
+{
+    Console.Write("l = m = ");
+    Console.WriteLine(l);
+}
 
-jest najmniejsza.
-	Wejście: a,b,c,d
-	Wyjście: najmniejsza z nich
+// zad 4
 
-5. (medium) Sprawdź czy trzy wprowadzone przez użytkownika 
+int a = int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
+int c = int.Parse(Console.ReadLine());
+int d = int.Parse(Console.ReadLine());
+if ((a < b) && (a < c) && (a < d))
+{
+    Console.WriteLine(a);
+}
+if ((b < a) && (b < c) && (b < d))
+{
+    Console.WriteLine(b);
+}
+if ((c < a) && (c < b) && (c < d))
+{
+    Console.WriteLine(c);
+}
+if ((d < a) && (d < b) && (d < c))
+{
+    Console.WriteLine(d);
+}
 
-liczby spełniają nierówność trójkąta.
-	Wejście: a, b, c
-	Wyjście: TAK / NIE
+// zad 5
 
-6. (medium) Niech z trzech wprowadzonych przez użytkwnika 
+Console.WriteLine("Podaj 3 długości boków trójkąta");
+int a = int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
+int c = int.Parse(Console.ReadLine());
+if (((a + b) > c) && ((a + c) > b) && ((b + c) > a))
+{
+    Console.WriteLine("Spełniają");
+}
+else
+{
+    Console.WriteLine("Nie spełnia");
+}    
 
-liczbach da się zbudować trójąt. Sprawdź czyten trójką jest 
+// zad 6
 
-ostrokątny, prostokątny czy rozwartokątny.
-	Wejście: a, b, c
-	Wyjście: ostro-, prosto-, rozwarto-kątny
+Console.WriteLine("Podaj 3 długości boków trójkąta");
+int a = int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
+int c = int.Parse(Console.ReadLine());
+if (((a+b)>c) && ((a+c)>b) && ((b+c)>a))
+{
+    int max = a;
+    int b1 = b;
+    int b2 = c;
+    if (max < b)
+    {
+        b1 = a;
+    }
+    if (max < c)
+    {
+        max = c;
+        b1 = a;
+        b2 = b;
+    }
+    if (Math.Pow(max, 2) == Math.Pow(b1, 2) + Math.Pow(b2, 2))
+        {
+        Console.WriteLine("Trójkąt prostokątny");
+    }
+    if (Math.Pow(max, 2) < Math.Pow(b1, 2) + Math.Pow(b2, 2))
+            {
+        Console.WriteLine("Trójkąt ostrokątny");
+    }
+    if (Math.Pow(max, 2) > Math.Pow(b1, 2) + Math.Pow(b2, 2))
+    {
+        Console.WriteLine("Trójkąt rozwartokątny");
+    }
+}
+else
+{
+    Console.WriteLine("To nie jest trójkąt");
+}
