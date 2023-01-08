@@ -66,6 +66,29 @@ Console.Write("Suma tych liczb: " + suma);
 Console.ReadKey();
 
 
+Console.WriteLine("Zadanie 6");
+Console.Write("Wpisz ilość liczb: ");
+int k = int.Parse(Console.ReadLine());
+int suma = 0;
+for (int i = 0; i < (k * 2); i += 2)
+{
+    Console.Write(i + "; ");
+    suma += i;
+}
+Console.WriteLine("Suma tych liczb: " + suma);
+Console.ReadKey();
+
+Console.WriteLine("Zadanie 7");
+Console.Write("Wpisz ilość liczb: ");
+int m = int.Parse(Console.ReadLine());
+int suma = 0;
+for (int i = 10; i < m * 2 + 10; i += 2)
+{
+    Console.Write(i + "; ");
+    suma += i;
+}
+Console.WriteLine("Suma tych liczb: " + suma);
+Console.ReadKey();
 
 
 
