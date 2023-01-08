@@ -26,3 +26,28 @@ for (int i = 1; i < n; i++)
     }
 }
 Console.ReadKey();
+
+
+Console.WriteLine("Zadanie 3");
+Console.WriteLine("Liczby 4-cyfrowe dzielące się przez 379: ");
+for (int i = 1000; i < 10000; i++)
+{
+	if ( i % 379 == 0)
+	{
+		Console.Write(i + "; ");
+	}
+}
+Console.ReadKey();
+
+
+
+
+
+
+
+
+
+
+
+
+
