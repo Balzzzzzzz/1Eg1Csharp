@@ -1,0 +1,88 @@
+Console.WriteLine("Zadanie 1");
+Console.Write("Wpisz liczbę:");
+int a = int.Parse(Console.ReadLine());
+if (a % 3 == 0)
+{
+    Console.WriteLine("TAK");
+}
+else
+{
+    Console.WriteLine("NIE");
+}
+
+Console.WriteLine("Zadanie 2");
+Console.Write("Wpisz liczbę:");
+int a = int.Parse(Console.ReadLine());
+if (a >= 100 && a % 17 == 0)
+{
+    Console.WriteLine("TAK");
+}
+else
+{
+    Console.WriteLine("NIE");
+}
+
+
+Console.WriteLine("Zadanie 3");
+Console.Write("Wpisz swój wiek:");
+int wiek = int.Parse(Console.ReadLine());
+if (wiek >= 18)
+{
+    Console.WriteLine("TAK");
+}
+else
+{
+    Console.WriteLine("NIE");
+}
+
+Console.WriteLine("Zadanie 4");
+Console.Write("Wpisz wagę ciężarówki: ");
+int waga = int.Parse(Console.ReadLine());
+int limit = 20;
+if (waga <= limit)
+{
+    Console.WriteLine("TAK");
+}
+else
+{
+    Console.WriteLine("NIE");
+}
+
+Console.WriteLine("Zadanie 5");
+Console.Write("Wpisz 1 liczbę: ");
+int a = int.Parse(Console.ReadLine());
+Console.Write("Wpisz 2 liczbę: ");
+int b = int.Parse(Console.ReadLine());
+Console.Write("Wpisz 3 liczbę: ");
+int c = int.Parse(Console.ReadLine());
+if (a < c && c < b)
+{
+    Console.WriteLine("TAK");
+}
+else
+{
+    Console.WriteLine("NIE");
+}
+
+int p = int.Parse(Console.ReadLine());
+int a = int.Parse(Console.ReadLine());
+if (((Math.Pow(a, p)) - a) % p == 0)
+{
+    Console.WriteLine("Tak");
+}
+else
+{
+    Console.WriteLine("NIE");
+}
+
+int p = int.Parse(Console.ReadLine());
+int k = int.Parse(Console.ReadLine());
+int s = int.Parse(Console.ReadLine());
+if ((p >= 0) && (k >= 0) && (s >= 0) && (s >= (k - p)))
+{
+    Console.WriteLine("TAK");
+}
+else
+{
+    Console.WriteLine("NIE");
+}
