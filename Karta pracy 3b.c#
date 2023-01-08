@@ -40,6 +40,16 @@ for (int i = 1000; i < 10000; i++)
 Console.ReadKey();
 
 
+Console.WriteLine("Zadanie 4");
+Console.WriteLine("Liczby 3-cyfrowe dzielące się przez 5,6 lub 11: ");
+for (int i = 100; i < 1000; i++)
+{
+	if ( i % 5 == 0 && i % 6 == 0 || i % 11 == 0)
+	{
+		Console.Write(i + "; ");
+	}
+}
+Console.ReadKey();
 
 
 
